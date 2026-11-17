@@ -350,6 +350,75 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .ride-footer { display: flex; justify-content: space-between; padding: 18px 7%; border-top: 1px solid #e0e3da; color: #718076; font-size: 8px; font-weight: 700; letter-spacing: .1em; }
 .ride-footer > span:last-child { display: flex; align-items: center; gap: 8px; }
 
+.rentals-hero { position: relative; min-height: 438px; display: flex; align-items: center; padding: 65px 10.2%; overflow: hidden; background: linear-gradient(90deg, rgba(13,38,29,.9), rgba(16,43,33,.62) 47%, rgba(16,43,33,.12)), url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=2200&q=90') center 53% / cover; color: #f6f5ef; }
+.rentals-hero-copy { position: relative; z-index: 1; max-width: 510px; }
+.rentals-hero h1 { margin: 24px 0 15px; font-size: clamp(54px, 6.6vw, 78px); line-height: .93; letter-spacing: -.08em; font-weight: 500; }
+.rentals-hero h1 em { color: var(--lime); font-family: Georgia, 'Times New Roman', serif; font-weight: 400; }
+.rentals-hero-copy > p { max-width: 360px; margin: 0 0 22px; color: #d2ddd2; font-size: 12px; line-height: 1.8; }
+.rentals-hero-copy .button { min-height: 44px; }
+.rentals-hero-stamp { position: absolute; right: 10.5%; bottom: 50px; display: flex; align-items: center; gap: 11px; padding: 12px 14px; border: 1px solid rgba(255,255,255,.45); color: #f5f3ea; font-size: 8px; font-weight: 700; letter-spacing: .12em; line-height: 1.5; }
+.rentals-hero-stamp svg { color: var(--lime); }
+.rentals-hero-caption { position: absolute; bottom: 20px; left: 10.2%; color: rgba(255,255,255,.8); font-size: 8px; font-weight: 700; letter-spacing: .12em; }
+.rentals-hero-caption span { color: var(--lime); padding: 0 5px; }
+.rental-catalog { padding: 71px 10.2% 76px; }
+.rental-catalog-top { display: flex; align-items: end; justify-content: space-between; }
+.rental-catalog-top h2 { margin: 18px 0 0; font-size: clamp(45px, 5.5vw, 65px); font-weight: 500; line-height: .95; letter-spacing: -.075em; }
+.rental-catalog-top h2 em { color: #6d8b62; font-family: Georgia, 'Times New Roman', serif; font-weight: 400; }
+.period-select { position: relative; display: flex; flex-direction: column; gap: 5px; padding: 0 22px 9px 0; border-bottom: 1px solid #aab6a7; }
+.period-select > span { color: #758378; font-size: 8px; font-weight: 700; letter-spacing: .12em; }
+.period-select select { appearance: none; padding: 0; border: 0; outline: 0; background: transparent; color: var(--forest); font-size: 11px; font-weight: 700; cursor: pointer; }
+.period-select svg { position: absolute; right: 0; bottom: 9px; pointer-events: none; }
+.rental-catalog-meta { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin: 30px 0 22px; }
+.category-filters { display: flex; flex-wrap: wrap; gap: 7px; }
+.category-filter { min-height: 33px; padding: 0 14px; border: 1px solid #dce2d8; background: transparent; color: #52685b; font-size: 9px; cursor: pointer; transition: background .15s, color .15s, border-color .15s; }
+.category-filter.selected, .category-filter:hover { border-color: var(--forest); background: var(--forest); color: #f6f5ef; }
+.rental-catalog-meta > p { display: flex; align-items: center; gap: 7px; margin: 0; color: #77847a; font-size: 8px; }
+.illustrative-dot { width: 6px; height: 6px; border-radius: 50%; background: #9abb57; }
+.rental-listing-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.rental-listing-card { min-width: 0; background: #fff; }
+.rental-listing-image { position: relative; width: 100%; height: clamp(170px, 19vw, 235px); display: block; padding: 0; overflow: hidden; border: 0; background: #e4e8df; cursor: pointer; text-align: left; }
+.rental-listing-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
+.rental-listing-image:hover img { transform: scale(1.04); }
+.listing-number { position: absolute; top: 12px; left: 12px; padding: 7px 8px; background: rgba(246,245,239,.95); color: var(--forest); font-size: 8px; font-weight: 700; letter-spacing: .1em; }
+.listing-arrow { position: absolute; right: 12px; bottom: 12px; width: 33px; height: 33px; display: grid; place-items: center; background: var(--lime); color: var(--forest); }
+.listing-body { padding: 17px 17px 15px; }
+.listing-category { color: #728174; font-size: 8px; font-weight: 700; letter-spacing: .13em; }
+.listing-body h3 { margin: 8px 0 4px; font-size: 19px; font-weight: 500; letter-spacing: -.045em; }
+.listing-body > p { min-height: 30px; margin: 0; color: #718076; font-size: 9px; line-height: 1.6; }
+.listing-specs { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 15px; padding: 12px 0; border-top: 1px solid #e7eae3; border-bottom: 1px solid #e7eae3; }
+.listing-specs span, .detail-features span { display: inline-flex; align-items: center; gap: 5px; color: #65756a; font-size: 8px; }
+.listing-specs svg, .detail-features svg { color: #708872; }
+.listing-bottom { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-top: 13px; }
+.listing-price { display: flex; align-items: baseline; gap: 4px; white-space: nowrap; }
+.listing-price strong { font-size: 13px; }
+.listing-price small { color: #7d897f; font-size: 8px; }
+.listing-bottom > button { display: flex; align-items: center; gap: 6px; padding: 0; border: 0; background: transparent; color: var(--forest); font-size: 9px; font-weight: 700; cursor: pointer; }
+.listing-bottom > button:hover { color: #6d8b62; }
+.rental-empty { display: flex; flex-direction: column; align-items: center; padding: 48px 20px; border: 1px solid #dce2d8; text-align: center; }
+.rental-empty h3 { margin: 16px 0 7px; font-size: 17px; font-weight: 500; }
+.rental-empty p { margin: 0 0 15px; color: #728075; font-size: 10px; }
+.rental-empty .text-link { padding: 0 0 4px; border-width: 0 0 1px; background: transparent; cursor: pointer; }
+.rental-detail-panel { position: relative; display: grid; grid-template-columns: .9fr 1fr; gap: 28px; margin-top: 27px; padding: 24px; border: 1px solid #dce2d8; background: #fff; }
+.rental-detail-close { position: absolute; top: 14px; right: 14px; width: 31px; height: 31px; display: grid; place-items: center; border: 1px solid #dce2d8; border-radius: 50%; background: #fff; color: var(--forest); cursor: pointer; }
+.rental-detail-image { min-height: 280px; overflow: hidden; background: #e4e8df; }
+.rental-detail-image img { width: 100%; height: 100%; object-fit: cover; }
+.rental-detail-copy { padding: 16px 20px 10px 0; }
+.rental-detail-copy h3 { margin: 14px 0 8px; font-size: 28px; font-weight: 500; letter-spacing: -.06em; }
+.rental-detail-copy > p { max-width: 400px; color: #68776c; font-size: 10px; line-height: 1.75; }
+.detail-features { display: flex; flex-wrap: wrap; gap: 14px; padding: 12px 0; border-bottom: 1px solid #e6e9e1; }
+.detail-rate-list { display: flex; flex-direction: column; gap: 9px; margin: 14px 0; }
+.detail-rate-list div { display: flex; justify-content: space-between; color: #627368; font-size: 9px; }
+.detail-rate-list strong { color: var(--forest); }
+.detail-plan-button { min-height: 41px; border: 0; cursor: pointer; }
+.plan-preview-message { display: flex; align-items: flex-start; gap: 7px; margin: 12px 0 0; color: #64766a; font-size: 9px; line-height: 1.5; }
+.plan-preview-message svg { flex: 0 0 auto; }
+.rental-disclaimer { display: flex; align-items: flex-start; gap: 8px; margin: 24px 0 0; color: #758278; font-size: 9px; line-height: 1.6; }
+.rental-disclaimer svg { flex: 0 0 auto; color: #718b62; }
+.rentals-partner-strip { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 35px 10.2%; background: #e9ebe2; }
+.rentals-partner-strip > div > span { color: #718076; font-size: 8px; font-weight: 700; letter-spacing: .13em; }
+.rentals-partner-strip h2 { margin: 8px 0 0; font-size: 21px; font-weight: 500; letter-spacing: -.04em; }
+.rentals-partner-strip .button { min-height: 41px; white-space: nowrap; }
+
 .drive-hero { position: relative; min-height: 495px; display: flex; align-items: center; padding: 65px 10.2%; overflow: hidden; background: var(--forest); color: #f6f5ef; }
 .drive-hero::after { position: absolute; content: ''; width: 420px; height: 420px; right: 7%; top: 33px; border: 1px solid rgba(226,239,210,.13); border-radius: 50%; box-shadow: 0 0 0 48px rgba(226,239,210,.035), 0 0 0 100px rgba(226,239,210,.025); }
 .drive-hero-copy { position: relative; z-index: 1; max-width: 560px; }
