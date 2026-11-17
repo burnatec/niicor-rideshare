@@ -285,3 +285,95 @@ button, a { -webkit-tap-highlight-color: transparent; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
+
+.ride-page { min-height: 100svh; background: var(--cream); }
+.ride-header { height: 72px; padding: 0 7%; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #e0e3da; }
+.ride-back, .ride-header-note { display: inline-flex; align-items: center; gap: 8px; font-size: 10px; font-weight: 600; }
+.ride-back { color: #52685b; }
+.ride-header-note { color: #62766a; font-size: 8px; letter-spacing: .1em; }
+.ride-layout { display: grid; grid-template-columns: .85fr 1fr; gap: 8%; max-width: 1160px; margin: 0 auto; padding: 70px 6% 78px; }
+.ride-intro { position: relative; min-height: 600px; padding: 36px 0 0 10px; overflow: hidden; }
+.ride-intro h1 { position: relative; z-index: 1; margin: 31px 0 16px; font-size: clamp(55px, 6vw, 76px); line-height: .94; font-weight: 500; letter-spacing: -.08em; }
+.ride-intro h1 em { color: #6d8b62; font-family: Georgia, 'Times New Roman', serif; font-weight: 400; }
+.ride-intro > p { position: relative; z-index: 1; max-width: 330px; color: #647369; font-size: 12px; line-height: 1.8; }
+.ride-assurance { position: relative; z-index: 1; display: flex; align-items: center; gap: 9px; margin-top: 29px; color: #62766a; font-size: 10px; }
+.ride-assurance svg { color: #78925d; }
+.ride-location-art { position: absolute; left: 0; right: -15%; bottom: 20px; height: 210px; opacity: .72; }
+.art-route { position: absolute; display: block; border: 1px solid #cbd7c8; border-radius: 50%; transform: rotate(-24deg); }
+.art-route-one { left: -2%; top: 22px; width: 88%; height: 106px; }
+.art-route-two { left: 12%; top: 67px; width: 76%; height: 117px; transform: rotate(18deg); }
+.art-pin { position: absolute; z-index: 1; width: 36px; height: 36px; display: grid; place-items: center; border-radius: 50%; background: var(--lime); color: var(--forest); }
+.art-pin-one { left: 11%; top: 81px; }.art-pin-two { right: 18%; top: 15px; background: var(--forest); color: var(--lime); }
+.art-dot { position: absolute; left: 54%; top: 118px; width: 8px; height: 8px; border: 2px solid #8ca17f; border-radius: 50%; }
+.ride-form-card { align-self: start; padding: 29px 30px 25px; background: #fff; box-shadow: 0 15px 45px rgba(25,54,41,.08); }
+.ride-card-heading { display: flex; align-items: flex-start; justify-content: space-between; }
+.ride-card-number { color: var(--forest); font-size: 13px; font-weight: 700; }.ride-card-number span { color: #a2aca2; font-weight: 400; }
+.ride-card-heading h2, .ride-preview-result h2 { margin: 12px 0 21px; font-size: 27px; font-weight: 500; letter-spacing: -.055em; }
+.ride-form { display: flex; flex-direction: column; gap: 21px; }
+.ride-location-fields { position: relative; }
+.ride-input-row { display: flex; align-items: center; gap: 13px; min-height: 68px; border-bottom: 1px solid #e6e9e1; }
+.route-point { width: 9px; height: 9px; flex: 0 0 auto; margin-left: 3px; border: 1.5px solid var(--forest); border-radius: 50%; }
+.route-point-end { width: 8px; height: 8px; border: none; border-radius: 1px; background: #abd04d; }
+.ride-input-content { flex: 1; display: flex; flex-direction: column; gap: 7px; }
+.ride-input-content > span, .ride-class-fieldset legend, .ride-schedule-fields label > span { color: #758378; font-size: 8px; font-weight: 700; letter-spacing: .12em; }
+.ride-input-content input { width: 100%; border: 0; outline: 0; background: transparent; color: var(--forest); font-size: 12px; }
+.ride-input-content input::placeholder { color: #a0aaa0; }
+.ride-input-connector { position: absolute; top: 44px; left: 7px; height: 26px; border-left: 1px dashed #b8c2b5; }
+.ride-class-fieldset { margin: 0; padding: 0; border: 0; }
+.ride-class-fieldset legend { margin-bottom: 12px; }
+.ride-class-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.ride-class-option { position: relative; min-height: 93px; padding: 11px 7px; display: flex; flex-direction: column; align-items: flex-start; gap: 7px; border: 1px solid #e3e7df; background: #fff; color: var(--forest); text-align: left; cursor: pointer; transition: border-color .15s, background .15s; }
+.ride-class-option.selected { border-color: var(--forest); background: #f2f5ed; }
+.ride-class-option > strong { font-size: 10px; }
+.ride-class-option > span { color: #768378; font-size: 8px; }
+.ride-class-option .ride-class-check { position: absolute; right: 6px; top: 7px; }
+.ride-schedule-fields { display: grid; grid-template-columns: 1.1fr .9fr 1fr; gap: 10px; }
+.ride-schedule-fields label { min-width: 0; display: flex; flex-direction: column; gap: 8px; }
+.ride-schedule-fields input, .ride-schedule-fields select { width: 100%; min-width: 0; height: 37px; padding: 0 8px; border: 1px solid #e0e5dc; border-radius: 0; background: #fff; color: var(--forest); font-size: 10px; }
+.ride-submit { width: 100%; min-height: 47px; border: 0; cursor: pointer; }
+.ride-form-disclaimer { margin: -12px 0 0; color: #7c897d; font-size: 9px; line-height: 1.55; }
+.ride-preview-result { min-height: 495px; display: flex; flex-direction: column; align-items: flex-start; }
+.ride-result-icon { width: 43px; height: 43px; display: grid; place-items: center; margin-bottom: 27px; background: var(--lime); }
+.ride-preview-result .eyebrow { font-size: 8px; }
+.ride-preview-result h2 { margin-bottom: 26px; font-size: 34px; line-height: 1.02; }
+.preview-route { position: relative; width: 100%; display: grid; grid-template-columns: 14px 1fr; align-items: center; gap: 13px 10px; padding: 17px 0; border-top: 1px solid #e2e6de; border-bottom: 1px solid #e2e6de; }
+.preview-route > div { display: flex; flex-direction: column; gap: 5px; }
+.preview-route small { color: #7c897e; font-size: 8px; font-weight: 700; letter-spacing: .12em; }
+.preview-route strong { font-size: 11px; font-weight: 600; }
+.preview-route-line { position: absolute; left: 4px; top: 40px; height: 25px; border-left: 1px dashed #b8c2b5; }
+.preview-meta { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0; }
+.preview-meta span { padding: 7px 9px; background: #f0f2ec; color: #52685b; font-size: 9px; }
+.not-connected-note { display: flex; align-items: flex-start; gap: 10px; margin-top: auto; padding: 13px; background: #f6f5ef; color: #65766a; }
+.not-connected-note svg { flex: 0 0 auto; margin-top: 1px; }
+.not-connected-note p { margin: 0; font-size: 10px; line-height: 1.6; }
+.ride-edit-button { width: 100%; min-height: 43px; margin-top: 14px; border: 0; cursor: pointer; }
+.ride-footer { display: flex; justify-content: space-between; padding: 18px 7%; border-top: 1px solid #e0e3da; color: #718076; font-size: 8px; font-weight: 700; letter-spacing: .1em; }
+.ride-footer > span:last-child { display: flex; align-items: center; gap: 8px; }
+
+@media (max-width: 760px) {
+  .ride-header { height: 64px; padding: 0 20px; }
+  .ride-header .wordmark { font-size: 21px; }
+  .ride-back { font-size: 0; gap: 0; }
+  .ride-back svg { width: 19px; height: 19px; }
+  .ride-header-note { font-size: 7px; }
+  .ride-layout { grid-template-columns: 1fr; gap: 24px; padding: 30px 20px 47px; }
+  .ride-intro { min-height: 260px; padding: 14px 0 0; }
+  .ride-intro h1 { margin: 22px 0 11px; font-size: clamp(48px, 12vw, 66px); }
+  .ride-intro > p { max-width: 260px; margin: 0; font-size: 11px; }
+  .ride-assurance { margin-top: 16px; font-size: 9px; }
+  .ride-location-art { left: 48%; right: -22%; bottom: -4px; height: 165px; opacity: .55; }
+  .art-route-one { top: 26px; height: 85px; }
+  .art-route-two { top: 57px; height: 88px; }
+  .art-pin { width: 30px; height: 30px; }
+  .art-pin-one { top: 74px; }.art-pin-two { top: 11px; }
+  .ride-form-card { padding: 23px 19px 20px; }
+  .ride-card-heading h2 { font-size: 23px; }
+  .ride-form { gap: 19px; }
+  .ride-class-grid { gap: 6px; }
+  .ride-class-option { min-height: 88px; padding: 9px 5px; }
+  .ride-class-option > strong { font-size: 9px; }
+  .ride-class-option > span { font-size: 7px; }
+  .ride-schedule-fields { gap: 7px; }
+  .ride-schedule-fields input, .ride-schedule-fields select { padding: 0 5px; font-size: 9px; }
+  .ride-footer { padding: 16px 20px; }
+}

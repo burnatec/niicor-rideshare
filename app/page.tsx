@@ -61,7 +61,7 @@ export default function Page() {
           <a href="#partners" onClick={() => setMenuOpen(false)}>Drive with us</a>
           <a href="#business" onClick={() => setMenuOpen(false)}>Business</a>
         </nav>
-        <div className="header-actions"><a className="login-link" href="#contact">Log in</a><a className="button button-dark button-small" href="#book">Get moving <ArrowUpRight size={15} /></a></div>
+        <div className="header-actions"><a className="login-link" href="#contact">Log in</a><a className="button button-dark button-small" href="/ride">Get moving <ArrowUpRight size={15} /></a></div>
       </header>
 
       <section className="hero" id="home">
@@ -71,7 +71,7 @@ export default function Page() {
           <div className="eyebrow eyebrow-light"><span className="eyebrow-line" /> YOUR CITY. YOUR WAY.</div>
           <h1>Good things<br />are <em>going places.</em></h1>
           <p className="hero-copy">The ride you need. The car you want. A smoother way to get there, right here in Ghana.</p>
-          <a className="hero-cta" href="#book">Find your way <span><ArrowDownRight size={19} /></span></a>
+          <a className="hero-cta" href="/ride">Find your way <span><ArrowDownRight size={19} /></span></a>
         </div>
         <div className="hero-caption"><span>05°36&apos; N&nbsp; 00°11&apos; W</span><span>ACCRA, GHANA</span></div>
         <div className="hero-side-note"><span className="side-note-line" /> A little closer to everywhere.</div>
